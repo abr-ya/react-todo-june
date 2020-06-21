@@ -15,3 +15,7 @@ export interface IFormBS {
 export interface INotes {
 	data: string[];
 }
+
+export interface IItem {
+	text: string;
+}

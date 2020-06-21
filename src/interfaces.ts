@@ -7,3 +7,11 @@ export interface IApp {
 	loading: boolean;
 	data?: any[];
 }
+
+export interface IFormBS {
+	addNote: (text: string) => void;
+}
+
+export interface INotes {
+	data: string[];
+}

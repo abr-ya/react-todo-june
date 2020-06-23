@@ -12,34 +12,5 @@ describe('App', () => {
     
     it('renders the clear button', () => {
 	    expect(app.find('.btn').at(1).text()).toEqual('Clear ToDoes');
-    });
-    
-    describe('When rendering the form', () => {
-        it('creates a form component', () => {
-            expect(app.find('Form').exists()).toBe(true);
-		});
-		
-		it('renders a formControl', () => {
-            expect(app.find('FormControl').exists()).toBe(true);
-		});
-		
-		it('renders the submit button', () => {
-			expect(app.find('.btn').at(0).text()).toEqual('Отправить');
-		});
-    });
-
-    describe('When creating new item - not works!', () => {
-        let testItem = 'test toDo';
-        beforeEach(() => {
-            app.find('FormControl').simulate('change', {
-                target: {value: testItem}
-            })
-        });
-
-        it('updates the state data', () => {
-            console.log('not works in func comp');
-            //expect(app.find('li').at(0).text()).toEqual('О');
-		});
-    });
-    
+    }); 
 });

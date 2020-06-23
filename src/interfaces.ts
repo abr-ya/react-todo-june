@@ -12,6 +12,10 @@ export interface IFormBS {
 	addNote: (text: string) => void;
 }
 
+export interface IFormBSState {
+	text: string;
+}
+
 export interface INotes {
 	data: string[];
 }
